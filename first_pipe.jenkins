@@ -20,6 +20,7 @@ pipeline {
             steps {
                 sh 'ssh anatolii@anatolii \'uptime\''
             }
+        }
          stage("third step") {
             steps {
                 sh 'ssh anatolii@anatolii \'ls\''
