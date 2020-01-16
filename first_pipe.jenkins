@@ -1,4 +1,3 @@
-  
 #!groovy
 // Check ub1 properties
 properties([disableConcurrentBuilds()])
@@ -14,9 +13,13 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'ssh root@ub1 \'hostname\''
+                sh 'ssh anatolii@anatolii \'hostname\''
             }
-    
+        }
+        stage("Second step") {
+            steps {
+                sh 'ssh anatolii@anatolii \'uptime\''
+            }
         }
     }
 }
