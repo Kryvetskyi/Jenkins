@@ -23,6 +23,7 @@ pipeline {
          stage("third step") {
             steps {
                 sh 'ssh anatolii@anatolii \'ls\''
+            }
         }
     }
 }
