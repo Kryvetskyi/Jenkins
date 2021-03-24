@@ -1,5 +1,5 @@
 #!groovy
-// Check ub1 properties
+// Check ubuntu-1 properties
 properties([disableConcurrentBuilds()])
 
 pipeline {
@@ -13,17 +13,17 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-                sh 'ssh anatolii@anatolii \'hostname\''
+                sh 'ssh anatol@ubunti-1 \'hostname\''
             }
         }
         stage("Second step") {
             steps {
-                sh 'ssh anatolii@anatolii \'uptime\''
+                sh 'ssh anatol@ubuntu-1 \'uptime\''
             }
         }
          stage("third step") {
             steps {
-                sh 'ssh anatolii@anatolii \'ls\''
+                sh 'ssh anatol@ubuntu-1 \'ls\''
             }
         }
     }
