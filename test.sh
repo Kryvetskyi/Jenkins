@@ -1,1 +1,1 @@
-echo 'Go!!!'
+echo hello ${name}
